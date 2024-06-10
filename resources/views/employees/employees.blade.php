@@ -9,6 +9,9 @@
     <button type="button" class="btn btn-tambah">
         <a href="/employee/create">Tambah Data</a>
     </button>
+    <button type="button" class="btn btn-cetak">
+        <a href="{{ route('employee.pdf') }}" target="_blank">Cetak PDF</a>
+    </button>
     <table class="table-data">
         <thead>
             <tr>

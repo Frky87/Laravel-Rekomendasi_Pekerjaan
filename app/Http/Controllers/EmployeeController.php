@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
+use Barryvdh\DomPDF\Facade\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -99,4 +100,11 @@ class EmployeeController extends Controller
         $employee->delete();
         return redirect('/employee');
     }
+
+    public function generatePDF()
+{
+    $employees = Employee::all();
+    $pdf = PDF::loadView('employees.employees-pdf', compact('employees'));
+    return $pdf->download('employees.pdf');
+}
 }
