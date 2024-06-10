@@ -87,6 +87,11 @@
     white-space: nowrap;
 }
 
+.logo_name {
+    color: #fff;
+    font-size: 24px;
+}
+
 
 /* main content */
 

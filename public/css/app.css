@@ -30,3 +30,77 @@
     text-align: center;
     margin-top: 10px;
 }
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Width for the sidebar */
+    height: 100%;
+    background: #2E3440;
+    padding: 20px 0;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+
+/* Logo details */
+.logo-details {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack vertically */
+}
+
+/* Logo image */
+.logo-img {
+    width: 60px; /* Adjusted size */
+    height: auto;
+    margin-bottom: 10px; /* Spacing below logo */
+}
+
+/* Logo name */
+.logo_name {
+    color: white;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    text-align: center; /* Center text */
+}
+
+/* Navigation links */
+.nav-links {
+    margin-top: 20px;
+}
+
+/* Navigation list items */
+.nav-links li {
+    list-style: none;
+    margin: 15px 0; /* Spacing between items */
+}
+
+/* Navigation links */
+.nav-links li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px; /* Increased font size */
+    transition: all 0.4s ease;
+}
+
+/* Navigation icons */
+.nav-links li a .bx {
+    min-width: 40px;
+    font-size: 24px; /* Increased icon size */
+    color: white;
+    display: flex;
+    justify-content: center; /* Center icons */
+}
+
+/* Active and hover states */
+.nav-links li a.active, .nav-links li a:hover {
+    background: #394265;
+    border-radius: 12px;
+}
+
+/* Link names */
+.nav-links li a .links_name {
+    font-size: 20px; /* Increased font size */
+}
